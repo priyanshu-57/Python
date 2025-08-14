@@ -1,5 +1,6 @@
+# string input'
 
-# # #getting started
+name= input("What's your name? ")
 
-# # print("Back to track")
-# print("Hello there..I am getting started :")
+print("Your name is ", name)
+
