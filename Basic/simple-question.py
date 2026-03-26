@@ -23,6 +23,20 @@ print("Hello world")
 
 #Take a number and print double and square
 
-a = int (input(" enter a number:"))
-print ("Double is", a+ a)
-print ("Square is", a*a)
+# a = int (input(" enter a number:"))
+# print ("Double is", a+ a)
+# print ("Square is", a*a)
+
+# Variables and data types question
+#take two input and print sum and difference
+
+# a= int(input("Enter the first number:"))
+# b= int(input("Enter the 2nd number:"23))
+
+# print("sum=",a+b,"difference=",a-b)
+
+#take name and marks , print"Ram scored 85 marks"
+
+name= input("Enter your name:")
+marks= int(input("Enter your marks:"))
+print(f"{name} scored {marks}. ")

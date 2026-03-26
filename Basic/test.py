@@ -44,6 +44,25 @@
 
 # take a nubmber and print the square of that number
 
-a= int(input("enter number: "))
-print("Square is", a*a)
-print(f"Square is {a*a}")
+# a= int(input("enter number: "))
+# print("Square is", a*a)
+# print(f"Square is {a*a}")
+
+# print("Hi i am  munna")
+# a= 28
+# print(a)
+
+# a="Ruby"
+# b="julain"
+# print(f"{a} is stronger than {b} in team fights")
+
+#input
+# name= input("what your name: ")
+# print(name)
+
+# a= float(input("Enter your percentage:"))
+# print(a)
+
+print(type(23))
+print(type(2.5))
+print(type("hey"))
