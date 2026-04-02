@@ -1,20 +1,23 @@
 
+# print("Hey there!")
 
-# print("hey there")
-
-# a= 10
+# a= "Mero nam"
+# b= 32
 # print(a)
+# print(b)
 
-# a=20
-# b=23
+# Name= "Munna "
+# age= 24
 
-# print(f"She is {a} years old and he is {b} years old")
+# print(f"My name is {Name} and I am {age} years old")
 
-# name= input("Whats your name: ")
-# print("Name:", name)
+# name= input("What's your name:")
+# grade= int(input("Which class do you study?"))
 
-# age= int(input("Whats your age:"))
-# print("age:", age)
+# print(f"His name is {name} and he studies in grade {grade}")
 
-l= float(input("its length:"))
-print("length:",l)
+# print(type("a"))
+# print (type(2.5))
+
+# a= 2
+# print(type(a))
