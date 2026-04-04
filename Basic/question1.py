@@ -15,29 +15,53 @@ Then print a message using an f-string like this:
 
 # print(f"Hello, I am {name}.I am {age} years old and {height} meters tall. ")
 
-name, age, height= input("Enter your name , age and height in meter").split()
-age=int(age) #type casting
-height= float(height) 
+# name, age, height= input("Enter your name , age and height in meter").split()
+# age=int(age) #type casting
+# height= float(height) 
 
-print(f"Hello, I am {name}. I am {age} years old and {height   } meters tall.")
+# print(f"Hello, I am {name}. I am {age} years old and {height   } meters tall.")
 
-# Question no 2
+# # Question no 2
 
-# Take two space-separated inputs:
-# 	•	First input: a decimal number (float)
-# 	•	Second input: an integer
+# # Take two space-separated inputs:
+# # 	•	First input: a decimal number (float)
+# # 	•	Second input: an integer
 
-# Print their sum and a sentence showing both values using f-string formatting with 2 decimal places.
-
-
-a = float(input("Enter fist no.: "))
-b = int(input("Enter 2nd no.: "))
-
-a,b= map(float, input("Enter first number and second number: ").split())
-
-b=int(b)
-sum= a+b
-
-print(f"Sum= {sum:.2f} . You entered {a} as the float and {b} as the integer")
+# # Print their sum and a sentence showing both values using f-string formatting with 2 decimal places.
 
 
+# a = float(input("Enter fist no.: "))
+# b = int(input("Enter 2nd no.: "))
+
+# a,b= map(float, input("Enter first number and second number: ").split())
+
+# b=int(b)
+# sum= a+b
+
+# print(f"Sum= {sum:.2f} . You entered {a} as the float and {b} as the integer")
+
+"""
+#Count vowels
+
+text= input("Enter the text:")
+count=0
+
+for i in text:
+    if i in "aeiouAEIOU":
+        count +=1
+       
+	   
+print("Total count=", count)
+"""
+
+#Reverse a number
+
+num= int(input("Enter the no.:"))
+rev=0
+for i in num:
+    rev= "i" + rev
+    
+print("Reverse is:", rev)
+    
+
+    
