@@ -41,27 +41,48 @@ Then print a message using an f-string like this:
 # print(f"Sum= {sum:.2f} . You entered {a} as the float and {b} as the integer")
 
 """
-#Count vowels
+# Count vowels
 
-text= input("Enter the text:")
-count=0
-
-for i in text:
-    if i in "aeiouAEIOU":
+text= input("Enter the word:")
+count= 0
+for ch in text:
+    if ch in "aeiouAEIOU":
         count +=1
-       
-	   
+    
 print("Total count=", count)
+    
 """
-
-#Reverse a number
+"""
+# Reverse the no.
 
 num= int(input("Enter the no.:"))
-rev=0
-for i in num:
-    rev= "i" + rev
-    
-print("Reverse is:", rev)
-    
+digit=0
+rev= 0
+while num > 0:
+  digit= num % 10
+  rev= rev * 10 + digit
+  num= num // 10
 
-    
+print("Rerverse is:", rev)
+"""
+"""
+#👉 Take a number
+👉 Print:
+	•	“Fizz” if divisible by 3
+	•	“Buzz” if divisible by 5
+	•	“FizzBuzz” if both
+"""
+
+num= int(input("Enter the no.:"))
+
+if num % 3 ==0 and num % 5 ==0:
+    print("FizzBuzz")
+
+elif num % 3 == 0:
+    print("fizz")
+
+elif num % 5 ==0:
+    print("Buzz")
+
+else:
+    print("Non-match")
