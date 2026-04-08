@@ -34,14 +34,24 @@
 
 # largest among three number
 
-a= int(input("First number:"))
-b= int(input("Second number:"))
-c= int(input("Third number:"))
+# a= int(input("First number:"))
+# b= int(input("Second number:"))
+# c= int(input("Third number:"))
 
-if a> b and a>c:
-    print("a is greatest")
-elif b> c and b> a:
-    print("b is greatest")
-else:
-    print("c is greatest")
+# if a> b and a>c:
+#     print("a is greatest")
+# elif b> c and b> a:
+#     print("b is greatest")
+# else:
+#     print("c is greatest")
     
+
+# a= 2
+# print(type(a))
+
+# print(type"2")
+
+# print(type"hey")
+
+# print(type("hey"))
+# print(type(4))
