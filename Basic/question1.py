@@ -73,16 +73,33 @@ print("Rerverse is:", rev)
 	•	“FizzBuzz” if both
 """
 
-num= int(input("Enter the no.:"))
+# num= int(input("Enter the no.:"))
 
-if num % 3 ==0 and num % 5 ==0:
-    print("FizzBuzz")
+# if num % 3 ==0 and num % 5 ==0:
+#     print("FizzBuzz")
 
-elif num % 3 == 0:
-    print("fizz")
+# elif num % 3 == 0:
+#     print("fizz")
 
-elif num % 5 ==0:
-    print("Buzz")
+# elif num % 5 ==0:
+#     print("Buzz")
 
-else:
-    print("Non-match")
+# else:
+#     print("Non-match")
+
+
+#Prime number check
+
+# num= int(input("Enter the no.:"))
+# ch = 0
+
+# if num<= 1:
+#     print("Not prime Number")
+# else:
+#     for i in range(2,int(num*0.5)+1):
+#         if num % i == 0:
+#             print("Not Prime number")
+#             break
+#         else:
+#             print("Prime number")
+
