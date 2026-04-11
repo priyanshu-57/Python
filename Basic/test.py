@@ -1,57 +1,30 @@
 
-# print("Hey there!")
+#prime no .check
 
-# a= "Mero nam"
-# b= 32
-# print(a)
-# print(b)
+# num= int(input("Enter the no.:"))
 
-# Name= "Munna "
-# age= 24
-
-# print(f"My name is {Name} and I am {age} years old")
-
-# name= input("What's your name:")
-# grade= int(input("Which class do you study?"))
-
-# print(f"His name is {name} and he studies in grade {grade}")
-
-# print(type("a"))
-# print (type(2.5))
-
-# a= 2
-# print(type(a))
-
-#check whether the number is odd or even
-
-# a= int(input("Enter the number: "))
-
-# if a % 2 == 0 :
-#     print("Even")
-
-# else :
-#     print("Odd")
-
-# largest among three number
-
-# a= int(input("First number:"))
-# b= int(input("Second number:"))
-# c= int(input("Third number:"))
-
-# if a> b and a>c:
-#     print("a is greatest")
-# elif b> c and b> a:
-#     print("b is greatest")
+# if num<= 1:
+#     print("Not Prime Number")
 # else:
-#     print("c is greatest")
-    
+#     for i in range(2, int(num**0.5) +1):
+#         if num % i == 0:
+#             print("Not prime no.")
+#             break
+#     else:
+#         print("Prime number")
 
-# a= 2
-# print(type(a))
 
-# print(type"2")
+#palindrome no.
 
-# print(type"hey")
+num= int(input("Enter the no. :"))
+rev=0
+original= num
+while num > 0:
+    digit= num % 10
+    rev = rev *10 + digit
+    num= num//10
 
-# print(type("hey"))
-# print(type(4))
+if original==rev:
+    print("Palindrome")
+else:
+    print("not palindrome")

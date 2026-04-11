@@ -96,10 +96,30 @@ print("Rerverse is:", rev)
 # if num<= 1:
 #     print("Not prime Number")
 # else:
-#     for i in range(2,int(num*0.5)+1):
+#     for i in range(2,int(num**0.5)+1): #root square
 #         if num % i == 0:
 #             print("Not Prime number")
 #             break
 #         else:
 #             print("Prime number")
 
+
+#palindrome
+
+num= int(input("enter the no.:"))
+
+if num <0 :
+	print("Not palindrome")
+else:
+	orginal= num
+	digit= 0
+	rev=0
+	while num >0:
+		digit= num%10
+		rev= rev * 10+ digit
+		num =num//10
+
+if orginal == rev:
+	print("Palindrome no")
+else:
+	print("Not palindrome")	
