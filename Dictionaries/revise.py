@@ -57,14 +57,3 @@
 # for key,value in house.items():
 #     print(key,":",value)
 
-students = [
-    {"name": "A", "marks": 80},
-    {"name": "B", "marks": 60},
-    {"name": "C", "marks": 40}
-]
-#print
-#A → 80
-#B → 60
-
-for i in range(0,2):
-    print(students[i]["name"],"→",students[i]["marks"])
