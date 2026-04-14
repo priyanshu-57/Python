@@ -1,0 +1,15 @@
+A-78-B
+
+B-56-c
+
+C-90-A
+
+D-45-F
+
+E-67-B
+
+Average mark: 67.2
+Highest mark:90
+Lowest mark:45
+No. of Pass students:4
+Topper: C

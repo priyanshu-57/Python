@@ -29,7 +29,7 @@ def lowest(marks):
     for i in marks:
         if i < low:
             low=i
-    return i
+    return low
 
 #pass count
 
@@ -69,3 +69,34 @@ for j in students:
 
 
 print(students)
+
+#who scored highest
+
+for k in students:
+    if k["marks"]== high(marks):
+        print(f"{k['names']} got the highest")
+
+
+#write to file
+
+with open("result.txt","w") as f:
+    
+    #write student data
+
+    for s in students:
+        f.write(f"{s["names"]}-{s["marks"]}-{s["grade"]}\n")
+
+        f.write("\n")
+
+        #write summary
+    f.write(f"Average mark: {avg(marks)}\n")
+    f.write(f"Highest mark:{high(marks)}\n")
+    f.write(f"Lowest mark:{lowest(marks)}\n")
+    f.write(f"No. of Pass students:{passcount(marks)}\n")
+
+# highest scorer name
+    for k in students:
+        if k["marks"] == high(marks):
+            f.write(f"Topper: {k['names']}\n")
+
+    
