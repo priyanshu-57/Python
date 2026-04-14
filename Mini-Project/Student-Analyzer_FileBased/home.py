@@ -40,10 +40,32 @@ def passcount(marks):
             ch +=1
     return ch
 
-print(avg(marks))
-print(high(marks))
-print(lowest(marks))
-print(passcount(marks))                
+# print(avg(marks))
+# print(high(marks))
+# print(lowest(marks))
+# print(passcount(marks))                
 
-with open("marks.txt","+a") as f:
+students=[]
+names=["A","B","C", "D","E"]
+
+for i in range(len(marks)):
+    students.append({'names':names[i],'marks': marks[i]})
     
+# print(students)
+
+#add grades
+def grade(marks):
+    if marks>80:
+        return "A"
+    elif marks >60:
+        return "B"
+    elif marks >50:
+        return "c"
+    else:
+        return "F"
+    
+for j in students:
+    j["grade"]= grade(j["marks"])
+
+
+print(students)
