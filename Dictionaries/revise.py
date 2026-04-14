@@ -1,59 +1,56 @@
 
-# price=[600,700,1000,1500,2000,2500]
+# #print data in list
 
-# # print(price)
+# id= [121,122,123,124,125]
 
-# price.append(1750)
-# price.remove(700)
+# name= ["Ram", "Shyam", "Hari","Tanjiro", "Nejuko"]
 
-# # print(price)
+# # print(id,name)
 
-# for i in price:
+# #add
+# id.append(126)
+# name.append("Inoske")
+
+# # print(id)
+# # print(name)
+
+# id.remove(121)
+# name.remove("Ram")
+
+# # print(id,name)
+
+
+
+# for i in id:
 #     print(i)
+
 
 #Dictionaries
 
-# d= {"name":"Ram","age":"20","Height":"2 feet"}
+student= {
+    'name':'A',
+    'id': '121',
+    'mark':'90'
+}
+#add
+student["address"]= "Nepal"
 
-# d["name"]= "Priyanshu "
-# d["id"]= 40
+#update
+student['id']= 1
 
-# print(d)
+# print(student)
 
-#list of dictionaries
-# mark= [
-#     {'name ': 'A','mark':'40'},
-#     {'name':'B','mark':'50'},
-#     {'name':'C','mark':'45'}
-# ]
-
-# detail={'name':'A','id':'2', }
-# print(detail["name"])
-
-# detail["name"]= "Ram" #update
-# detail["mark"]= 25
-
-# print(detail["name"])
-# print(detail["mark"])
-
-#loop in Dictionaries
-
-# house= {
-#     'room':'4',
-#     'hall':'1',
-#     'kitchen':'2'
-# }
 #loop in key
-# for key in house:
+
+# for key in student:
 #     print(key)
 
-#loop in values
+#loop in value
 
-# for value in house.values():
+# for value in student.values():
 #     print(value)
 
-#loop through key+values
+#loop in both key and value
 
-# for key,value in house.items():
-#     print(key,":",value)
-
+# for key,value in student.items():
+#     print(key,value)

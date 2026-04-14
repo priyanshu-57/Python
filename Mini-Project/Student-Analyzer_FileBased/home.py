@@ -44,3 +44,6 @@ print(avg(marks))
 print(high(marks))
 print(lowest(marks))
 print(passcount(marks))                
+
+with open("marks.txt","+a") as f:
+    
