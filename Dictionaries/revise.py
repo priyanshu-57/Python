@@ -1,56 +1,71 @@
 
-# #print data in list
+# num= [121,123,124,125]
 
-# id= [121,122,123,124,125]
+# num.append(122)
+# # num.remove(121)
 
-# name= ["Ram", "Shyam", "Hari","Tanjiro", "Nejuko"]
+# for i in num[:2]:
+#     print (i)
 
-# # print(id,name)
+#remove duplicate from list
 
-# #add
-# id.append(126)
-# name.append("Inoske")
+# num=[1,2,2,3,4,4,5]
 
-# # print(id)
-# # print(name)
+# new=[]
 
-# id.remove(121)
-# name.remove("Ram")
+# for i in num:
+#     if i not in new:
+#         new.append(i)
 
-# # print(id,name)
+# print(new)        
 
+# #reverse the list
 
+# rev=[]
 
-# for i in id:
-#     print(i)
+# for j in range(len(new)-1,-1,-1):
+#     rev.append(new[j])
 
+# print(rev)
 
-#Dictionaries
+# students={
+#     'name':'Ram',
+#     'age': '26',
+#     'grade': '9'
 
-student= {
-    'name':'A',
-    'id': '121',
-    'mark':'90'
-}
-#add
-student["address"]= "Nepal"
+# }
 
-#update
-student['id']= 1
+# # print(students)
+# students['mark']='90' #add
+# students['grade']= '10' #update
+# # print(students)
 
-# print(student)
+# # for key in students:
+# #     print(key)
 
-#loop in key
+# # for value in students.values():
+# #     print(value)
 
-# for key in student:
-#     print(key)
-
-#loop in value
-
-# for value in student.values():
-#     print(value)
-
-#loop in both key and value
-
-# for key,value in student.items():
+# for key,value in students.items():
 #     print(key,value)
+
+#List of Dictionaries
+
+students=[
+    {'name':'A', 'mark ': '50'},
+    {'name':'B', 'mark ': '70'},
+    {'name':'C', 'mark ': '90'},
+    
+]
+# A → 80
+# B → 60
+
+for i in students[:2]:
+    print(f"{i['name']}→ {i['mark ']}")
+
+#create and write into file
+
+with open("data.txt",'w') as f:
+    # for k in students:
+    #     f.write(f"{k}\n")
+    f.write(f"{students}")
