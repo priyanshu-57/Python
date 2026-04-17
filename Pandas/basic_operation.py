@@ -24,5 +24,5 @@ df= pd.DataFrame(data)
 df["result"]= df["marks"] >=50
 print(df)
 
-#value counts
-print(df["result"].value_counts())
+#pass counts
+print(df["result"].sum())

@@ -1,0 +1,6 @@
+name,marks,result,Grade
+ D,90,True,A
+ A,80,True,A
+ B,60,True,B
+ E,55,True,C
+ C,40,False,Fail
