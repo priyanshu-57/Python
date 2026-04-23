@@ -1,47 +1,24 @@
 
-# num=[]
-
-# with open("test.txt", "r") as f:
-#     content= f.read()
-#     print(content)
-
-# with open("test.txt","r") as f:
-#     for line in f:
-#         print(line.strip())
-
-# num=[]
-
-# with open("test.txt", "r") as f:
-#     for line in f:
-#         num.append(int(line.strip()))
-
-# print(num)
-
-# import numpy as np
-
-# x= np.array(num)
-
-# print("Average: ",x.mean())
-# print("Lowest:",x.min())
-# print("Highest:",x.max())
-# print(x+ 10)
-
-students={
-    "name":["a","b","c"],
-    "marks":[40,50,70]
-
+student= {
+    'name': 'A',
+    'mark': '56',
+    'id': '101'
 }
-import pandas as pd
 
-df= pd.DataFrame(students)
+#add
+student['Grade']= 'C'
 
-# print(df)
-# print(df.head())
-# print(df.describe())
+student['mark']= 95
+# print(student)
 
-# print(df.columns)
+#list of dictionaries
 
-# print(df["name"])
+students= [
+    {'name':'A', 'mark': '75'},
+    {'name': 'B', 'mark':'56'},
+    {'name':'C', 'mark':'85'}
+]
+#a=75, b=56
 
-print(df[df["marks"]>=50])
-
+for i in students[:2]:
+    print(f"{i['name']}= {i['mark']}")
