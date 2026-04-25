@@ -1,11 +1,29 @@
 
-# with open("new.txt","w") as f:
-#     f.write("hey there\n I am Priyanshu.")
+#create CSV file
 
-# with open("new.txt","r") as f:
-#     content= f.read()
-#     print(content)
+# with open("table.csv", "w") as f:
+#     f.write("Name, marks\n A,40\n B,65\n C,90")
 
-# with open("new.txt","r") as f:
-#     for line in f:
-#         print(f"{line}**")
+import pandas as pd
+
+df= pd.read_csv("table.csv")
+df.columns=df.columns.str.strip()
+
+# print(df)
+
+
+def result(mark):
+    if mark >=50:
+        return "pass"
+    else:
+        return "fail"
+
+df["Result"]= df["marks"].apply(result)
+
+
+
+print("Average:",df["marks"].mean())
+print("Highest:",df["marks"].max())
+
+print(df)
+print(df["Result"].value_counts())
