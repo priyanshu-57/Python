@@ -1,63 +1,43 @@
 
-# print("hello")
+num= [1,2,3,4,5]
 
-# a= 4.5
-# print(type(a))
-
-
-# for i in range(0,6):
-    
-#     for j in range(0,i+1):
-#         print("*",end="")
-#     print()
-
-# a= int(input("Enter the no:"))
-# b= int(input("Enter 2nd no:"))
-
-# def add(x,y):
-#     total= x+y
-#     print("Total",total)
-
-# add(a,b)
-
-# num= [1,2,3]
-# num.append(4)
-# num.remove(1)
+num.append(3)
+num.remove(1)
+# print(num)
 
 # for i in num:
 #     print(i)
 
-#pprime no. check
+# remove the duplicates from list
 
-# num= int(input("Enter the no.:"))
+# new= []
 
-# if num <=1:
-#     print("Not prime no.")
-# else:
-#     for i in range(2,int(num**0.5)+1):
-#         if num% i ==0:
-#             print("Not prime no.")
-#             break
-#     else:
-#         print("Prime no.")
+# for i in num:
+#     if i not in new:
+#         new.append(i)
+    
+# print("New list",new)
 
-# student= {
-#     "Name":"A",
-#     "Id": "6679",
-#     "mark": "75"
-# }
+# rev= []
 
-# print(student["Name"])
+# for j in range(len(new)-1,-1,-1):
+#     rev.append(new[j])
+
+# print("Reverse of new:", rev)
+
+# employee= {
+#     "name":"A", "id": "111", "depart": "s"
+#     }
+
+# for key,values in employee.items():
+#     print(key,":", values)
 
 #list of dictionaries
+employee= [{ "name": "A", "id":11}, {"name": "B","id":12}]
 
-student= [
-    {"name":"A", 'mark':"45"},
-    {"name":"B", "mark":"65"}
+# employee={
+#     "name": ["A","B"],
+#     "id": [11,12]
 
-]
-
-print(student)
-
-with open("new.txt","w") as f:
-    f.write("Back again\n now never discontinue")
+# }
+print(employee)
