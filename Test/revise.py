@@ -68,12 +68,27 @@
 
 #Remove the dulpicant from list
 
-num= [2,2,3,4,5]
+# num= [2,2,3,4,5]
 
-new= []
+# new= []
 
-for i in num:
-    if i not in new:
-        new.append(i)
+# for i in num:
+#     if i not in new:
+#         new.append(i)
 
-print(new)
+# print(new)
+
+# a= [1,2,3,4,5]
+# print(a)
+
+# def hi():
+#     print("hello")
+
+# hi()
+
+#sum of 2 numbers using function
+
+def calculate_sum(a,b):
+    print(a+b)
+
+calculate_sum(4,2)
